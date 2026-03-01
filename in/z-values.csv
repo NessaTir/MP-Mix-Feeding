@@ -1,0 +1,19 @@
+﻿Response;Parameter;Contrast_1;vs;Contrast_2;Estimate;Std.Error;z_value;OR;graph_OR;log_OR;p;p_code; n ;Specifications
+Reaction;Type;Food;-;MP;1.6107;0.3445;4.676;5.006343;-1.610733;1.610733;0;***;20229;glmer(reaction ~ type + (1|col) + (1|particle) + (1|shape) + (1|biofilm) + (1|trigger) + (1|spec), family = binomial)
+Reaction;Polymer;Polymer A;-;Polymer B;-1.9494;0.3196;-6.101;0.142;1.94944;-1.9494396;0;***;20229;glmer(reaction ~ particle + (1|col) + (1|type) + (1|shape) + (1|biofilm) + (1|trigger) + (1|spec), family = binomial)
+Reaction;Shape;Fragment;-;Fiber;0.04861;0.31727;0.153;1.049811;-0.04861052;0.04861052;0.878;-;17355;glmer(reaction ~ shape + (1|col) + (1|particle) + (1|biofilm) + (1|trigger) + (1|spec), family = binomial)
+Reaction;Biofilm;unfouled;-;biofouled;0.28279;0.04606;6.14;1.32683;-0.2827923;0.2827923;0;***;17355;glmer(reaction ~ biofilm + (1|col) + (1|particle) + (1|shape) + (1|trigger) + (1|spec), family = binomial)
+Reaction;Trigger;No Trigger;-;Trigger;0.24941;0.03966;6.288;1.283271;-0.249412;0.249412;0;***;20229;glmer(reaction ~ trigger + (1|col) + (1|particle) + (1|shape) + (1|biofilm) + (1|spec), family = binomial)
+Reaction;Species;Pve;-;Spi;0.39598;0.03985;9.938;1.485843;-0.3959824;0.3959824;<2e-16;***;20229;glmer(reaction ~ spec + (1|col) + (1|particle) + (1|shape) + (1|trigger) + (1|biofilm), family = binomial)
+Ingestion;Type;Food;-;MP;3.038;1.046;2.905;20.85625;-3.037654;3.037654;0.0037;**;3433;glmer(ingestion ~ type + (1|col) + (1|particle) + (1|shape) + (1|biofilm) + (1|trigger) + (1|spec), family = binomial)
+Ingestion;Polymer;Polymer A;-;Polymer B;-2.8886;0.3273;-8.826;0.0557;2.88857;-2.8885723;< 2e-16;***;;
+Ingestion;Shape;Fragment;-;Fiber;2.0539;0.9152;2.244;7.798579;-2.053942;2.053942;0.0248;*;2271;glmer(ingestion ~ shape + (1|col) + (1|particle) + (1|biofilm) + (1|trigger) + (1|spec), family = binomial)
+Ingestion;Biofilm;unfouled;-;biofouled;0.06334;0.15536;0.408;1.065386;-0.06333673;0.06333673;0.684;-;2271;glmer(ingestion ~ biofilm + (1|col) + (1|particle) + (1|shape) + (1|trigger) + (1|spec), family = binomial)
+Ingestion;Trigger;No Trigger;-;Trigger;-0.07243;0.09603;-0.754;0.930134;0.07242666;-0.07242666;0.451;-;3433;glmer(ingestion~ trigger + (1|col) + (1|particle) + (1|shape) + (1|biofilm) + (1|spec), family = binomial)
+Ingestion;Species;Pve;-;Spi;-0.9298;0.1025;-9.076;0.3946294;0.9298082;-0.9298082;<2e-16;***;3433;glmer(ingestion ~ spec + (1|col) + (1|particle) + (1|shape) + (1|trigger) + (1|biofilm), family = binomial)
+Incorporation;Type;Food;-;MP;3.74;1.918;1.949;42.09281;-3.739877;3.739877;0.0512;.;806;glmer(incorporation ~ type + (1|col) + (1|particle) + (1|shape) + (1|biofilm) + (1|trigger) + (1|spec), family = binomial)
+Incorporation;Polymer;Polymer A;-;Polymer B;-2.44;0.6985;-3.493;0.08714751;2.44015;-2.4401531;0.0048;**;;
+Incorporation;Shape;Fragment;-;Fiber;4.953;2.208;2.243;141.6261;-4.953191;4.953191;0.0249; *;213;glmer(incorporation ~ shape + (1|col) + (1|particle) + (1|biofilm) + (1|trigger) + (1|spec), family = binomial)
+Incorporation;Biofilm;unfouled;-;biofouled;-0.2604;0.5311;-0.49;0.7707687;0.2603669;-0.2603669;0.624;-;213;glmer(incorporation ~ biofilm + (1|col) + (1|particle) + (1|shape) + (1|trigger) + (1|spec), family = binomial)
+Incorporation;Trigger;No Trigger;-;Trigger;-1.0154;0.4434;-2.29;0.3622619;1.015388;-1.015388;0.022;*;806;glmer(incorporation ~ trigger + (1|col) + (1|particle) + (1|shape) + (1|biofilm) + (1|spec), family = binomial)
+Incorporation;Species;Pve;-;Spi;-0.1776;0.4655;-0.381;0.8373105;0.1775604;-0.1775604;0.703;-;806;glmer(incorporation ~ spec + (1|col) + (1|particle) + (1|shape) + (1|trigger) + (1|biofilm), family = binomial)
