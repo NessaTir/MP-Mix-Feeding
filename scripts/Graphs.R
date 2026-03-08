@@ -81,7 +81,7 @@ Feeding <- Feeding %>%
 
 
 ## ---- 3.2. Polyp activity measurements ---------------------------------------
-polyp_activity <- read_rds("processed/polyp_activity_graph_data.rds") %>%
+polyp_activity <- read_rds("in/polyp_activity_graph_data.rds") %>%
   mutate(tp = case_when(tp == "1" ~ "0",
                         tp == "2" ~ "1",
                         tp == "2.5" ~ "1.2",
